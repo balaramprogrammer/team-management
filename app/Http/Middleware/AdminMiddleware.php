@@ -20,7 +20,7 @@ class AdminMiddleware
         }
 
         return redirect()
-                ->route('user.dashboard')
+                ->route('leader.dashboard')
                 ->with('error','Unauthorized Access');
     }
 }

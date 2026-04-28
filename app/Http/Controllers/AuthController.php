@@ -18,11 +18,11 @@ class AuthController extends Controller
    public function save(Request $request)
     {
         
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6|confirmed',
-            'terms' => 'required'
+       $request->validate([
+        'name' => 'required',
+        'email' => 'required|email|unique:users,email',
+        'password' => 'required|min:6|confirmed',
+        'terms' => 'required'
         ]);
 
         // Save Data
@@ -58,7 +58,7 @@ public function login(Request $request)
             return redirect()->route('admin.dashboard')->with('success', 'Login successful');
         }elseif (Auth::user()->role_id == 2) {
 
-            return redirect()->route('user.dashboard')->with('success', 'Login successful');
+            return redirect()->route('leader.dashboard')->with('success', 'Login successful');
         }
      
     }

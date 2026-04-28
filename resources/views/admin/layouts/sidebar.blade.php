@@ -10,8 +10,8 @@
             </li>
 
             <li>
-                <a class="nav-link" href="{{ route('admin.users') }}">
-                    <i class="bi bi-people"></i> Users
+                <a class="nav-link" href="{{ route('admin.team_leader') }}">
+                    <i class="bi bi-people"></i> Team Leaders
                 </a>
             </li>
 

@@ -147,7 +147,7 @@
 
             <div class="text-center mt-3">
                 <small class="text-muted">
-                    Already have an account? <a href="{{route('showLogin')}}">Login</a>
+                    Already have an account? <a href="{{route('login')}}">Login</a>
                 </small>
             </div>
 

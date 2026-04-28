@@ -1,4 +1,4 @@
-@extends('user.layouts.main')
+@extends('leader.layouts.main')
 @section('main')
 
     <!-- Main -->
